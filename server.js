@@ -35,7 +35,7 @@ app.get('/movies/:movieName', (req,res) => {
       'Content-Type': 'video/mp4'
     })
 
-    // status 206 - Partial Content para o streaming
+    // status 206 - Partial Content para o streaming o streaming só funciona com isso
     res.status(206)
     const stream = fs.createReadStream(movieFile, {start, end})
     stream.on('open', () => stream.pipe(res))

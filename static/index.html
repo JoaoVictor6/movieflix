@@ -5,8 +5,33 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Filme</title>
+  <style>
+    body {
+      height: 100vh;
+      background: #111;
+      display: grid;
+      place-content: center;
+      font-family: sans-serif;
+    }
+    h1 {
+      text-align: center;
+      color: #fff;
+    }
+    video {
+      width: 700px;
+      height: 300px;
+    }
+
+    @media (max-width: 800px) {
+      video {
+        width: 100%;
+        height: 200px;
+      } 
+    }
+  </style>
 </head>
 <body>
-  <video src="movies/tyler.mp4" controls width="640" height="480"></video>
+  <h1>Que horas essa porra volta</h1>
+  <video src="/movies/que-horas-ela-volta.mp4" controls></video>
 </body>
 </html>
